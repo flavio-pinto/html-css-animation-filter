@@ -98,3 +98,132 @@
         transform: rotate(360deg);
     }
 }
+
+/* ESERCIZIO 11 */
+.ex-11-icon:hover {
+    animation: partial-rotation-and-back 2s ease-in alternate;
+}
+
+@keyframes partial-rotation-and-back {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        80% {
+            transform: rotate(300deg)
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+}
+
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top-space 2s linear;
+}
+
+@keyframes move-top-space {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 70%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bottom-space 2s linear;
+}
+
+@keyframes move-bottom-space {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: 70%;
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+/* ESERCIZIO 13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: move-top-space-around 3s linear;
+}
+
+@keyframes move-top-space-around {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    20% {
+        left: 75%;
+        top: -10px;
+    }
+
+    40% {
+        left: 75%;
+        top: 100%;
+    }
+
+    60% {
+        left: 0;
+        top: 100%;
+    }
+
+    80% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: move-bottom-space-around 3s linear;
+}
+
+@keyframes move-bottom-space-around {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    20% {
+        bottom: -10px;
+        right: 75%;
+    }
+
+    40% {
+        bottom: 100%;
+        right: 75%;
+    }
+
+    60% {
+        bottom: 100%;
+        right: -10%;
+    }
+
+    80% {
+        bottom: -10px;
+        right: -10%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
